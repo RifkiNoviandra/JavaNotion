@@ -21,19 +21,19 @@ public class Javanotion {
         Scanner input = new Scanner (System.in);
         System.out.print("Input The Limit : ");
         limit = input.nextInt();
-        if(limit >= 0){
+        if(limit > 0){
             for (int number = 1 ; number <= limit; number++) 
             {
                 if((number % 3 == 0) && (number % 5 == 0)){
                     System.out.print("FizzBuzz" + ",");
                 }
-                if((number%3 == 0) && (number%5 != 0)){
+                else if(number%3 == 0){
                     System.out.print("Fizz" + ",");
                 }
-                if((number%5 == 0) && (number%3 != 0)){
+                else if(number%5 == 0){
                     System.out.print("Buzz" + ",");
                 }
-                if((number % 3 != 0) && (number % 5 != 0)){
+                else{
                     System.out.print(number + ",");
                 }
             } System.out.println("END");

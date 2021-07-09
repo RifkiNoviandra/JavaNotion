@@ -63,5 +63,10 @@ public class javaobject {
         barang2.hitungHargaTotal();
         barang2.hitungDIskon(barang2.total);
         barang2.hitungHargaBayar(barang2.total, barang2.diskon);
+        
+        barang barang3 = new barang("ikan" , 1000 , 12);
+        barang3.hitungHargaTotal();
+        barang3.hitungDIskon(barang3.total);
+        barang3.hitungHargaBayar(barang3.total, barang3.diskon);
     }
 }
